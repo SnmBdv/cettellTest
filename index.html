@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Oprosnik Kettella</title>
   </head>
   <body>
@@ -12,18 +13,21 @@
       Отвечая на каждый вопрос, выберите, пожалуйста, один из трех предлагаемых
       ответов
     </h3>
-    <p>1. Я думаю, моя память сейчас лучше, чем была раньше:</p>
-    <div>
-      <input type="radio" id="question1A" name="question1" value="A" />
-      <label for="question1A">Да</label>
+    <div class="quizWindow">
+      <div class="question-container" id="question">Question goes here</div>
       <br />
-      <input type="radio" id="question1B" name="question1" value="B" />
-      <label for="question1A">Трудно сказать</label>
-      <br />
-      <input type="radio" id="question1C" name="question1" value="C" />
-      <label for="question1A">Нет</label>
+      <div class="options-container">
+        <form action="">
+          <input type="radio" class="option" id="option1" /><br />
+          <input type="radio" class="option" id="option2" /><br />
+          <input type="radio" class="option" id="option3" /><br />
+        </form>
+        <!-- <button class="option" id="option1">Option 1</button><br /><br />
+        <button class="option" id="option2">Option 2</button><br /><br />
+        <button class="option" id="option3">Option 3</button><br /><br /> -->
+        <button class="navigation" id="next-button">Next</button>
+      </div>
     </div>
-    <br /><br />
-    <div><button id="sendAnswerButton">Отправить ответ</button></div>
+    <script src="/script.js"></script>
   </body>
 </html>
