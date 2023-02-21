@@ -1,3 +1,11 @@
 body {
 	text-align: center;
 }
+
+button {
+	background-color: #88df60;
+}
+
+.navigation {
+	background-color: #3e6932;
+}
